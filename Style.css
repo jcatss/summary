@@ -1,0 +1,323 @@
+@import url('https://fonts.cdnfonts.com/css/boldhead');
+/*FONT-stilization*/
+.general{
+	margin: 50px;
+}
+#anchor_about_me{
+	width: 100%;
+	max-width: 1900px;
+	margin: 60px;
+}
+.font_intro{
+	display: flex;
+	height: 30px;
+	padding: 10px;
+	flex-direction: column;
+	align-items: center;
+}
+.intro_head{
+	color: #c7ccd6;
+	font-size: 120px;
+	font-family:'Boldhead',sans-serifs ;
+}
+.intro_slogan{
+	color: #c7ccd6;
+	font: 80px 'Expletus Sans';
+}
+.slogan{
+	margin: 70px;
+}
+
+/*Main config*/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	border: 1px solid black;
+	height: auto;
+	background: url(https://www.all-about-photo.com/images/articles/ART-1270-2.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+div{
+	border: 1px solid black;
+}
+.off_img, .me_img{
+	height: 100px;
+}
+.main_img{
+	height: 230px;
+}
+nav{
+	height: 50px;
+	float: right;
+}
+nav ul{
+	margin: 0px;
+	padding: 0px;
+}
+nav li{
+	display: inline-block;
+}
+nav a{
+	text-decoration: none;
+	padding: 10px;
+	line-height: 150px;
+	font-size: 30px;
+	margin: 0 auto;
+	color: white;
+}
+a:hover{
+
+}
+header{
+	position: sticky;
+	top: 0;
+	background-color: #2d3547;
+}
+footer{
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1900px;
+	height: 65px;
+}
+footer{
+	bottom: 0;
+	background-color: black;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+/*_______________________________*/
+
+
+/*Individual for blocks-page*/
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 1900px;
+	min-height: 100vh;
+}
+.About_me{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1900px;
+	min-height: 100vh;
+}
+#about_me{
+	background-color: papayawhip;
+}
+.offers{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1900px;
+	min-height: 100vh;
+}
+.Order{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 1900px;
+	min-height: 100vh;
+	background-color: papayawhip;
+}
+#order{
+	background-color: papayawhip;
+}
+.contacts{
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	max-width: 1900px;
+	min-height: 100vh;
+}
+/*_______________________________*/
+
+
+/*Individual for navigation*/
+.Header{
+	display: flex;
+	justify-content: flex-end;
+	height: 150px;
+	width: 100%;
+	max-width: 1900px;
+	margin: 0 auto;
+}
+.Header:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+..empty_start{
+	display: flex;
+	flex-basis: 15%;
+}
+.logo{
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 15%;
+}
+.empty_center{
+	display: flex;
+	flex-basis: 20%;
+}
+.navig{
+	display: flex;
+	flex-basis: 50%;
+	order: 1;
+}
+	
+/*_______________________________*/
+
+
+/*Individual for buttons*/
+.btn_order{
+	text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px;
+    color: #383d48;
+}
+.btn_order span{
+	 display: block;
+    overflow: hidden;
+    max-width: 0;
+    opacity: 0;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    line-height: 1;
+    transition: .4s ease;
+}
+.btn_order:after{
+	content: '\e886';
+    font-family: Linearicons-Free;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 22px;
+}
+.btn{
+	box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+   align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.order {
+  border-color: #c7ccd6;
+  color: #fff;
+  background-image: -webkit-linear-gradient(45deg, #eeb774 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #eeb774 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.order:hover {
+  background-position: 0;
+}
+/*_______________________________*/
+
+
+/*ANOTHER INDIVIDUAL SETTINGS*/
+
+/*For offers(1 card offer's)*/
+.offer_card{
+	margin: 25px;
+}
+
+
+/*Heading all pages, anchors*/
+
+
+
+/*Block "About me", information part*/
+.info_me{
+	display: flex;
+	flex-basis: 70% ;
+}
+
+
+/*Block "Offers", information part*/
+.info_offer{
+	text-align: center;
+}
+
+
+/*Form settings*/
+.form{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+/*Links without lines under link*/
+.contacts a{
+	text-decoration: none;
+}
+
+
+/*Block's size, page "Contacts"*/
+.links{
+	flex-basis: 45% ;
+}
+
+
+/*Block "Container", includes all blocks in site*/
+.container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1900px;
+	min-height: 100vh;
+}
+
+
+/*Block on page "Contacts", include photo*/
+.photo{
+	flex-basis: 30%;
+	background-image: linear-gradient(to right, #743ad5, #d53a9d, transparent 95%);
+}
