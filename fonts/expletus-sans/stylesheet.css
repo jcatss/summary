@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Expletus Sans';
+    src: url('ExpletusSans-BoldItalic.eot');
+    src: local('Expletus Sans Bold Italic'), local('ExpletusSans-BoldItalic'),
+        url('ExpletusSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ExpletusSans-BoldItalic.woff2') format('woff2'),
+        url('ExpletusSans-BoldItalic.woff') format('woff'),
+        url('ExpletusSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Expletus Sans';
+    src: url('ExpletusSans-SemiBoldItalic.eot');
+    src: local('Expletus Sans SemiBold Italic'), local('ExpletusSans-SemiBoldItalic'),
+        url('ExpletusSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ExpletusSans-SemiBoldItalic.woff2') format('woff2'),
+        url('ExpletusSans-SemiBoldItalic.woff') format('woff'),
+        url('ExpletusSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Expletus Sans';
+    src: url('ExpletusSans-Italic.eot');
+    src: local('Expletus Sans Italic'), local('ExpletusSans-Italic'),
+        url('ExpletusSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('ExpletusSans-Italic.woff2') format('woff2'),
+        url('ExpletusSans-Italic.woff') format('woff'),
+        url('ExpletusSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Expletus Sans';
+    src: url('ExpletusSans.eot');
+    src: local('Expletus Sans'), local('ExpletusSans'),
+        url('ExpletusSans.eot?#iefix') format('embedded-opentype'),
+        url('ExpletusSans.woff2') format('woff2'),
+        url('ExpletusSans.woff') format('woff'),
+        url('ExpletusSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Expletus Sans';
+    src: url('ExpletusSans-Medium.eot');
+    src: local('Expletus Sans Medium'), local('ExpletusSans-Medium'),
+        url('ExpletusSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('ExpletusSans-Medium.woff2') format('woff2'),
+        url('ExpletusSans-Medium.woff') format('woff'),
+        url('ExpletusSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Expletus Sans';
+    src: url('ExpletusSans-Bold.eot');
+    src: local('Expletus Sans Bold'), local('ExpletusSans-Bold'),
+        url('ExpletusSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ExpletusSans-Bold.woff2') format('woff2'),
+        url('ExpletusSans-Bold.woff') format('woff'),
+        url('ExpletusSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Expletus Sans';
+    src: url('ExpletusSans-MediumItalic.eot');
+    src: local('Expletus Sans Medium Italic'), local('ExpletusSans-MediumItalic'),
+        url('ExpletusSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('ExpletusSans-MediumItalic.woff2') format('woff2'),
+        url('ExpletusSans-MediumItalic.woff') format('woff'),
+        url('ExpletusSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Expletus Sans';
+    src: url('ExpletusSans-SemiBold.eot');
+    src: local('Expletus Sans SemiBold'), local('ExpletusSans-SemiBold'),
+        url('ExpletusSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('ExpletusSans-SemiBold.woff2') format('woff2'),
+        url('ExpletusSans-SemiBold.woff') format('woff'),
+        url('ExpletusSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
