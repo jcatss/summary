@@ -38,6 +38,9 @@
   transform: translate(-50%, -50%);
   color: #c7ccd6;
 }
+.desc_card1:hover{
+  
+}
 .title_card2{
   position: absolute;
   left: 45%;
@@ -88,9 +91,7 @@
   margin-top: 10px;
   height: 450px;
 }
-.card:hover{
 
-}
 /* Tooltip text */
 .desc_card3 .tooltiptext, .desc_card2 .tooltiptext, .desc_card1 .tooltiptext {
     visibility: hidden;
