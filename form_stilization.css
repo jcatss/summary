@@ -71,7 +71,7 @@
 }
 .form_block {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   width: 500px;
   height: 800px;
   border-radius: 10px;
