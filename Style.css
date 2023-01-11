@@ -378,6 +378,9 @@ p{
 	margin: 0px 0px 30px 30px;
 	font-size: 30px;
 }
+p{
+	color: #2d3547;
+}
 .size_gp{
 	width: 100%;
 	max-width: 1900px;
