@@ -1,0 +1,134 @@
+.offer_cards{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-color: papayawhip;
+  max-width: 1900px;
+  width: 100%;
+  min-height: 100vu;
+  height: 500px;
+}
+.bg_card{
+  height: 450px;
+  border-radius: 10%;
+}
+.cost_offer1 a, .cost_offer2 a, .cost_offer3 a{
+  text-decoration: none;
+}
+.title_card1{
+  position: absolute;
+  left: 11%;
+  top: 15px;
+  font: 30px 'Boldhead',sans-serifs;
+  color: #c7ccd6;
+
+}
+.cost_offer1{
+  position: absolute;
+  bottom: 50px;
+  left: 10.5%;
+}
+.desc_card1{
+  font: 25px 'Expletus Sans';
+  position: absolute;
+  text-align: center;
+  top: 43%;
+  left: 17%;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+  color: #c7ccd6;
+}
+.title_card2{
+  position: absolute;
+  left: 45%;
+  top: 15px;
+  font: 30px 'Boldhead',sans-serifs;
+  color: #c7ccd6;
+
+}
+.cost_offer2{
+  position: absolute;
+  bottom: 50px;
+  left: 43.5%;
+}
+.desc_card2{
+  font: 25px 'Expletus Sans';
+  position: absolute;
+  text-align: center;
+  top: 43%;
+  left: 50%;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+  color: #c7ccd6;
+}
+.title_card3{
+  position: absolute;
+  right: 10%;
+  top: 15px;
+  font: 30px 'Boldhead',sans-serifs;
+  color: #c7ccd6;
+
+}
+.cost_offer3{
+  position: absolute;
+  bottom: 50px;
+  right: 10%;
+}
+.desc_card3{
+  font: 25px 'Expletus Sans';
+  position: absolute;
+  text-align: center;
+  top: 43%;
+  right: 2%;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+  color: #c7ccd6;
+}
+.card{
+  margin-top: 10px;
+  height: 450px;
+}
+.card:hover{
+
+}
+/* Tooltip text */
+.desc_card3 .tooltiptext, .desc_card2 .tooltiptext, .desc_card1 .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 15px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.desc_card3 .tooltiptext::after, .desc_card2 .tooltiptext:after, .desc_card1 .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.desc_card3:hover .tooltiptext, .desc_card2:hover .tooltiptext, .desc_card1:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+

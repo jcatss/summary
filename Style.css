@@ -162,20 +162,14 @@ footer a{
 	font: 40px 'Expletus Sans';
 	align-items: flex-start;
 }
-.offers{
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	max-width: 1900px;
-	background-color: papayawhip;
-	height: 500px;
-}
 .Order{
+	padding: 25px 0; 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
 	max-width: 1900px;
+	height: 600px;
 	background-color: papayawhip;
 }
 #order{
@@ -249,6 +243,14 @@ footer a{
     padding: 15px;
     color: #383d48;
 }
+.button_order_main a{
+	text-decoration: none;
+	color: #c7ccd6 ;
+}
+.button_order a{
+	text-decoration: none;
+	color: #c7ccd6 ;
+}
 .btn_order span{
 	 display: block;
     overflow: hidden;
@@ -307,6 +309,42 @@ footer a{
   color: #fff;
   outline: 0;
 }
+
+.form_block::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #BFE2FF;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#BFE2FF, #BFE2FF), linear-gradient(#337AB7, #337AB7), linear-gradient(#BFE2FF, #BFE2FF), linear-gradient(#337AB7, #337AB7);
+    animation: anim-form_block 4s linear infinite;
+}
+.form_block::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+}
+@keyframes anim-form_block {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+#btn_submit{
+	display: flex;
+	justify-content: center;
+}
 .order {
   border-color: #c7ccd6;
   color: #fff;
@@ -326,9 +364,7 @@ footer a{
 /*ANOTHER INDIVIDUAL SETTINGS*/
 
 /*For offers(1 card offer's)*/
-.offer_card{
-	margin: 25px;
-}
+
 .portf_cont{
 	height: 500px;
 }

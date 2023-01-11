@@ -7,6 +7,7 @@
 		<link rel = "stylesheet" href = "Style.css">
 		<link rel = "stylesheet" href = "accordeon.css">
 		<link rel = "stylesheet" href = "carousel.css">
+		<link rel = "stylesheet" href = "offers.css">
 		<link rel = "stylesheet" href = "form_stilization.css">
 		<link rel = "stylesheet" type="text/css" href = "fonts/expletus-sans/stylesheet.css">
 		<link rel = "stylesheet" type="text/css" href = "fonts/playfair/playfair.css">
@@ -44,7 +45,7 @@
 					<h2 class="intro_slogan"><b><i>do it better</i></b></h2>
 				</div>
 				<div class="button_order_main">
-					<button class="btn order">Order</button>
+					<a href="#anchor_order"><button class="btn order">Order</button></a>
 				</div>
 				<div id="anchor_about_me"></div>
 			</div>	
@@ -124,7 +125,7 @@
   							<span class="dot" onclick="currentSlide(5)"></span>
 						</div>
 						<div class="link_site">
-							<button class="btn order"><a href="">Go to watch more</a></button>
+							<a href="https://musicalolympus.dp.ua/" target="_blank"><button class="btn order">Go to watch more</button></a>
 						</div>
 					</div>
 				</div>
@@ -135,86 +136,80 @@
 				<div class="font_intro" id="offers_h">
 					<h1 class="offers_head"><i>Offers</i></h1>
 				</div>
-				<div class="offers">
-					<div class="offer_card">
-						<div class="image_offer">
-							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdC75H7_RfUhzLepMj6mFZJaI_R9NaAxS5Zw&usqp=CAU" class="off_img">
+				<div class="offer_cards">
+					<div class="card">
+						<img class="bg_card" src="C:\Users\Valera\Desktop\Резюме Булгаков\summary\images\offer1.jpg">
+						<div class="title_card1">
+							<b>Low cost</b>
 						</div>
-						<div class="info_offer">
-							dfhuisdhfno
+						<div class="desc_card1">
+							<i>Create landing with <br>
+							site-builder</i>
+							<span class="tooltiptext"><i>The cost not includes hosting and domain</i></span>
 						</div>
-						<div class="button_order">
-							<input type="button" value="Order" class="btn order">
-						</div>
-					</div>
-					<div class="offer_card">
-						<div class="image_offer">
-							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwhsOnjd_8hTECFCt5d0qkJNxlg5qZ7SN4_A&usqp=CAU" class="off_img">
-						</div>
-						<div class="info_offer">
-							dfhuisdhfno
-						</div>
-						<div class="button_order">
-							<input type="button" value="Order" class="btn order">
+						<div class="cost_offer1">
+							<a href="#anchor_order"><button class="btn order">Order</button></a>
 						</div>
 					</div>
-					<div class="offer_card">
-						<div class="image_offer">
-							<img src="https://t3.ftcdn.net/jpg/02/54/89/70/360_F_254897008_avhZxo5dEntGHOud2zxbccac90GzD38e.jpg"class="off_img">
+					<div class="card">
+						<img class="bg_card" src="C:\Users\Valera\Desktop\Резюме Булгаков\summary\images\offer2.jpg">
+						<div class="title_card2">
+							Mid cost
 						</div>
-							<div class="info_offer">
-								dfhuisdhfno
-							</div>
-							<div class="button_order">
-								<input type="button" value="Order" class="btn order">
-							</div>
+						<div class="desc_card2">
+							<i>Create landing without <br>
+							site-builder</i>
+							<span class="tooltiptext"><i>Creating landing from coding. The cost not includes hosting and domain</i></span>
+						</div>
+						<div class="cost_offer2">
+							<a href="#anchor_order"><button class="btn order">Order</button></a>
 						</div>
 					</div>
-					<div id="anchor_order"></div>
+					<div class="card">
+						<img class="bg_card" src="C:\Users\Valera\Desktop\Резюме Булгаков\summary\images\offer3.jpg">
+						<div class="title_card3">
+							High cost
+						</div>
+						<div class="desc_card3">
+							<i>Create non-landing <br>
+								site on site-builder</i>
+							<span class="tooltiptext"><i>Creating another type of sites.The cost not includes hosting and domain</i></span>
+						</div>
+						</div>
+						<div class="cost_offer3">
+							<a href="#anchor_order"><button class="btn order">Order</button></a>
+						</div>
+					</div>
 				</div>
+
+				
+					<div id="anchor_order"></div>
+			</div>
 
 				<div class="size_pg">
 					<div class="font_intro" id="order">
 						<h1 class="order_head"><i>Order</i></h1>
 					</div>
 					<div class="Order">
-						<form id="form" action="#" novalidate>
-      						<div class="text-field">
-        						<label class="text-field__label" for="firstname">First name*</label>
-        						<input class="text-field__input" type="text" name="firstname" id="firstname" placeholder="Enter your name" required>
-        						<div class="text-field__message"></div>
-     						</div>
-      						<div class="text-field">
-       							 <label class="text-field__label" for="lastname">Last name*</label>
-        						<input class="text-field__input" type="text" name="lastname" id="lastname" placeholder="Enter your surname">
-       							<div class="text-field__message"></div>
-      						</div>
-      						<div class="text-field">
-        						<label class="text-field__label" for="email">Email*</label>
-       							<input class="text-field__input" type="email" name="email" id="email" required>
-        						<div class="text-field__message"></div>
-      						</div>
-     						 <div class="text-field">
-        						<label class="text-field__label" for="city">Phone</label>
-        						<input class="text-field__input" type="tel" name="phone" id="phone">
-        						<div class="text-field__message"></div>
-      						</div>
-      						 <div class="text-field">
-        						<label class="text-field__label" for="city">Choose your offer</label>
-        						<select class="text-field__input" type="tel" name="phone" id="phone">
-        							<option>Offer 1</option>
-        							<option>Offer 2</option>
-        							<option>Offer 3</option>
-        						</select>
-        						<div class="text-field__message"></div>
-      						</div>
-      						<div class="text-field">
-        						<label class="text-field__label" for="number">Comments</label>
-        						<textarea class="text-field__input" type="text" name="text" id="text" min="1" placeholder="Enter your comments"></textarea>
-        						<div class="text-field__message"></div>
-      						</div>
-      						<button type="submit">Отправить</button>
-    					</form>
+						<div class="form_block">
+							<form class="decor">
+								<div class="form-inner">
+									<h3>Write your order</h3>
+									<input type="text" placeholder="Name">
+									<input type="text" placeholder="Lastname">
+									<input type="tel" placeholder="Phone">
+									<input type="email" placeholder="Email">
+									<label class="sh_o">Chooose your offer</label><br>
+									<select class="opt">
+										<option class="opt">Offer 1</option>
+										<option class="opt">Offer 2</option>
+										<option class="opt">Offer 3</option>
+									</select>
+									<textarea placeholder="Сообщение..." rows="3"></textarea>
+									<input type="submit" value="Отправить">
+								</div>
+							</form>
+    					</div>
     				</div>
 
 					</div>
