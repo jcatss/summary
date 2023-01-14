@@ -29,6 +29,10 @@
 .form-inner select{
   padding: 5px;
   background: #E9EFF6;
+  color: #717171;
+}
+.form-inner select option{
+  color: black;
 }
 .form-inner input[type="submit"] {
    margin-top: 30px;

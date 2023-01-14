@@ -93,18 +93,9 @@ nav a{
 	color: white;
 }
 a:hover{
+	opacity: 0.5;
+}
 
-}
-.link_site{
-	display: flex;
-	justify-content: center;
-	font-size: 50px;
-}
-.link_site a{
-	color: white;
-	text-decoration: none;
-
-}
 header{
 	z-index: 1;
 	position: sticky;
@@ -114,12 +105,11 @@ header{
 footer{
 	border: 1px solid black;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	width: 100%;
 	max-width: 1900px;
-	height: 100px;
-}
-footer{
+	height: 200px;
 	bottom: 0;
 	background-color: #2d3547;
 }
@@ -127,6 +117,8 @@ footer a{
 	text-decoration: none;
 	color: white;
 }
+
+
 /*_______________________________*/
 
 
@@ -171,7 +163,6 @@ footer a{
 	width: 100%;
 	max-width: 1900px;
 	height: 600px;
-	background-color: papayawhip;
 }
 #order{
 	color: papayawhip;
@@ -184,10 +175,6 @@ footer a{
 	height: 100px;
 	font: 40px 'Expletus Sans';
 	align-items: flex-start;
-}
-.contacts{
-	display: flex;
-	justify-content: flex-start;
 }
 
 #cont_block{
@@ -439,9 +426,111 @@ p{
 /*Block on page "Contacts", include photo*/
 .photo{
 	flex-basis: 30%;
+	background-color: papayawhip;
 	background-image: linear-gradient(to right, #743ad5, #d53a9d, transparent 95%);
 }
-.main_ink{
+.main_link{
+	margin: 0 auto;
+	font: 30px 'Expletus Sans';
+}
+.cbVB{
+	color: white;
+	font-size: 25px;
+	margin: 35px auto;
+	font: ;
+}
+.cbVB i{
+	padding: 15px;
+	opacity: 0.8;
+}
+
+.contacts {
 	display: flex;
-	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: papayawhip;
+	position: relative;
+	width: 100%;
+	max-height: 500px;
+}
+
+/* Make the image to responsive */
+.image {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	height: 500px;
+	border-radius: 2rem;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+	border: 1px solid black;
+	position: absolute;
+	background-color: #475672;
+	opacity: 0.8;
+	overflow: hidden;
+	width: 40%;
+	height: 500px;
+	-webkit-transform:scale(0);
+	transition: .3s ease;
+	margin: 0 auto;
+}
+.bg_cont .overlay{
+	width: 25%;
+	border-radius: 2rem;
+}
+.bg_cont{
+	display: flex;
+	justify-content: center;
+	//margin: 0 auto;
+	width: 100%;
+	height: 500px;
+	flex-basis: 33%;
+}
+.start_block{
+	flex-basis: 50%;
+}
+.end_block{
+	flex-basis: 50%;
+}
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.bg_cont:hover .overlay {
+  transform: scale(1)
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.links_cont {
+	display: grid;
+	width: 360px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 100px);
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.links_cont h1{
+	color: white;
+	padding-top: 25%;
+}
+
+.links_cont a{
+	text-decoration: none;
+}
+.links_cont h1{
+	font: 40px 'Expletus Sans';
+	padding-top: 15%;
+}
+.ico{
+	width: 150px;
+}
+.ico i{
+	font-size: 50px;
+	padding-top: 15%;
+	padding-left: 40%;
+	color: floralwhite;
+	font-weight: bold;
 }
