@@ -59,13 +59,13 @@
 	margin: 0;
 }
 body{
-	border: 1px solid black;
+	
 	height: auto;
 	background: url(https://www.all-about-photo.com/images/articles/ART-1270-2.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 div{
-	border: 1px solid black;
+	border: 1px solid transparent;
 }
 .off_img, .me_img{
 	height: 100px;
@@ -92,6 +92,9 @@ nav a{
 	margin: 0 auto;
 	color: white;
 }
+.logo a:hover {
+	opacity: 1;
+}
 a:hover{
 	opacity: 0.5;
 }
@@ -103,7 +106,7 @@ header{
 	background-color: #2d3547;
 }
 footer{
-	border: 1px solid black;
+	margin-top: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -162,7 +165,6 @@ footer a{
 	align-items: center;
 	width: 100%;
 	max-width: 1900px;
-	height: 600px;
 }
 #order{
 	color: papayawhip;
@@ -208,16 +210,16 @@ footer a{
 	align-self: center;
 	display: flex;
 	flex-direction: column;
-	flex-basis: 15%;
+	flex-basis: 20%;
 }
 .empty_center{
 	display: flex;
-	flex-basis: 25%;
+	flex-basis: 20%;
 }
-.navig{
+.wrapper{
 	display: flex;
 	flex-basis: 50%;
-	order: 1;
+	align-self: flex-start;
 }
 	
 /*_______________________________*/
@@ -251,6 +253,12 @@ footer a{
     letter-spacing: 1px;
     line-height: 1;
     transition: .4s ease;
+}
+.btn_lnk a{
+	opacity: 1;
+}
+.btn_lnk a{
+	opacity: 1;
 }
 .btn_order:after{
 	content: '\e886';
@@ -353,9 +361,7 @@ footer a{
 
 /*For offers(1 card offer's)*/
 
-.portf_cont{
-	height: 500px;
-}
+
 p{
 	margin: 0;
 	font-style: "PlayfairDisplay";
@@ -369,11 +375,11 @@ p{
 p{
 	color: #2d3547;
 }
-.size_gp{
+.size_pg{
 	width: 100%;
 	max-width: 1900px;
 	margin: 0 auto;
-	height: 600px;
+	max-height: 1900px;
 	min-height: 100vu;
 }
 
@@ -446,12 +452,12 @@ p{
 
 .contacts {
 	display: flex;
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-bottom: 20px;
 	background-color: papayawhip;
 	position: relative;
 	width: 100%;
-	max-height: 500px;
+	max-height: 580px;
 }
 
 /* Make the image to responsive */
@@ -465,7 +471,7 @@ p{
 
 /* The overlay effect (full height and width) - lays on top of the container and over the image */
 .overlay {
-	border: 1px solid black;
+	
 	position: absolute;
 	background-color: #475672;
 	opacity: 0.8;
