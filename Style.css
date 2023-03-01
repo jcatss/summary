@@ -3,7 +3,6 @@
 .general{
 	margin: 50px;
 }
-
 #anchor_about_me{
 	width: 100%;
 	max-width: 1900px;
@@ -25,7 +24,7 @@
 #anchor_contacts{
 	width: 100%;
 	max-width: 1900px;
-	margin: 145px auto;
+	margin: 30px auto;
 	height: 0;
 }
 #anchor_order{
@@ -42,14 +41,21 @@
 }
 .intro_head{
 	color: #c7ccd6;
-	font-size: 120px;
+	text-align: center;
+	font-size: 100px;
 	font-family:'Boldhead',sans-serifs ;
 }
 .intro_slogan{
 	color: #c7ccd6;
-	font: 80px 'Expletus Sans';
+	font: 90px 'Expletus Sans';
+
+}
+.am_head{
+	font-size: 75px;
+	text-align: center;
 }
 .slogan{
+	margin: 0 auto;
 	margin: 70px;
 }
 
@@ -71,7 +77,8 @@ div{
 	height: 100px;
 }
 .main_img{
-	height: 230px;
+	width: 99%;
+	margin-bottom: 50px;
 }
 nav{
 	height: 50px;
@@ -95,7 +102,8 @@ nav a{
 .logo a:hover {
 	opacity: 1;
 }
-a:hover{
+nav a:hover{
+	list-style: none;
 	opacity: 0.5;
 }
 
@@ -114,6 +122,7 @@ footer{
 	max-width: 1900px;
 	height: 200px;
 	bottom: 0;
+	margin: 0 auto;
 	background-color: #2d3547;
 }
 footer a{
@@ -130,6 +139,8 @@ footer a{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	align-self: center;
 	width: 100%;
 	max-width: 1900px;
 }
@@ -142,20 +153,44 @@ footer a{
 #about_me{
 	color: papayawhip;
 	height: 100px;
-	font: 40px 'Expletus Sans';
+	font: 75px 'Expletus Sans';
 	align-items: flex-end;
+}
+.font_intro{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1900px;
 }
 #offers_h{
+	margin-bottom: 10px;
+}
+#offers_head{
+	float: right;
 	color: papayawhip;
 	height: 100px;
-	font: 40px 'Expletus Sans';
+	font: 75px 'Expletus Sans';
+}
+#offers_h{
+	float: right;
+	color: papayawhip;
+	height: 100px;
+	font: 750px 'Expletus Sans';
 	align-items: flex-end;
 }
+
 #portfolio{
 	float: left;
 	color: papayawhip;
 	height: 100px;
-	font: 40px 'Expletus Sans';
+	font: 75px 'Expletus Sans';
+	align-items: flex-start;
+}
+#order_head{
+	float: left;
+	color: papayawhip;
+	height: 100px;
+	font: 75px 'Expletus Sans';
 	align-items: flex-start;
 }
 .Order{
@@ -166,11 +201,11 @@ footer a{
 	width: 100%;
 	max-width: 1900px;
 }
-#order{
+#order_f{
+	float: right;
 	color: papayawhip;
 	height: 100px;
-	font: 40px 'Expletus Sans';
-	align-items: flex-start;
+	font: 75px 'Expletus Sans';
 }
 #form_ord{
 	color: papayawhip;
@@ -178,21 +213,36 @@ footer a{
 	font: 40px 'Expletus Sans';
 	align-items: flex-start;
 }
-
 #cont_block{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin: 100px 0;
+}
+#Contacts_head{
 	color: papayawhip;
 	height: 100px;
-	font: 40px 'Expletus Sans';
-	align-items: flex-end;
+	font: 75px 'Expletus Sans';
+	
 }
 /*_______________________________*/
 
-
+.wrapper2{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1900px;
+	height: 100uv;
+	overflow-y: auto;
+}
+.portf_cont{
+	margin: 150px 0;
+}
 /*Individual for navigation*/
 .Header{
 	display: flex;
 	justify-content: flex-end;
-	height: 150px;
+	height: 160px;
 	width: 100%;
 	max-width: 1900px;
 	margin: 0 auto;
@@ -207,10 +257,9 @@ footer a{
 	flex-basis: 10%;
 }
 .logo{
-	align-self: center;
 	display: flex;
-	flex-direction: column;
-	flex-basis: 20%;
+	flex-basis: 18%;
+	height: 100%;
 }
 .empty_center{
 	display: flex;
@@ -226,6 +275,10 @@ footer a{
 
 
 /*Individual for buttons*/
+.btn-warning{
+	width: 150px;
+	height: 60px;
+}
 .btn_order{
 	text-decoration: none;
     display: inline-flex;
@@ -242,7 +295,7 @@ footer a{
 	color: #c7ccd6 ;
 }
 .btn_order span{
-	 display: block;
+	display: block;
     overflow: hidden;
     max-width: 0;
     opacity: 0;
@@ -361,7 +414,6 @@ footer a{
 
 /*For offers(1 card offer's)*/
 
-
 p{
 	margin: 0;
 	font-style: "PlayfairDisplay";
@@ -375,12 +427,16 @@ p{
 p{
 	color: #2d3547;
 }
+.opst{
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	max-width: 1900px;
+}
 .size_pg{
 	width: 100%;
 	max-width: 1900px;
+	height: 100uv;
 	margin: 0 auto;
-	max-height: 1900px;
-	min-height: 100vu;
 }
 
 
@@ -388,7 +444,7 @@ p{
 .info_me{
 	display: flex;
 	flex-basis: 70%;
-	background-color: papayawhip;
+	background-color: rgba(255,239,213, 0.7);
 }
 
 
@@ -432,18 +488,29 @@ p{
 /*Block on page "Contacts", include photo*/
 .photo{
 	flex-basis: 30%;
-	background-color: papayawhip;
+	background-color: rgba(255,239,213, 0.7);
 	background-image: linear-gradient(to right, #743ad5, #d53a9d, transparent 95%);
 }
+#f_m{
+	text-align: center;
+}
 .main_link{
+	width: 100px;
+	height: 50px;
 	margin: 0 auto;
-	font: 30px 'Expletus Sans';
+	font-size: 30px;
+	text-align: center;
+	
+}
+.up_ar{
+	color: black;
 }
 .cbVB{
+	text-align: center;
+	width: 500px;
 	color: white;
 	font-size: 25px;
 	margin: 35px auto;
-	font: ;
 }
 .cbVB i{
 	padding: 15px;
@@ -454,7 +521,7 @@ p{
 	display: flex;
 	padding-top: 10px;
 	padding-bottom: 20px;
-	background-color: papayawhip;
+	background-color: rgba(255,239,213, 0.7);
 	position: relative;
 	width: 100%;
 	max-height: 580px;
@@ -476,20 +543,21 @@ p{
 	background-color: #475672;
 	opacity: 0.8;
 	overflow: hidden;
-	width: 40%;
+	width: 100%;
 	height: 500px;
 	-webkit-transform:scale(0);
 	transition: .3s ease;
 	margin: 0 auto;
 }
 .bg_cont .overlay{
-	width: 25%;
+	width: 34%;
 	border-radius: 2rem;
 }
 .bg_cont{
 	display: flex;
 	justify-content: center;
-	//margin: 0 auto;
+	align-items: center;
+	margin: 0 auto;
 	width: 100%;
 	height: 500px;
 	flex-basis: 33%;

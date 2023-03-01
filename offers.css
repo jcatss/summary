@@ -1,135 +1,84 @@
 .offer_cards{
-  position: relative;
   display: flex;
   justify-content: space-around;
-  background-color: papayawhip;
+  align-items: center;
+  background-color: rgba(255,239,213, 0.7);
   max-width: 1900px;
   width: 100%;
-  min-height: 100vu;
   height: 500px;
+  margin-top: 100px;
 }
-.bg_card{
-  height: 450px;
-  border-radius: 10%;
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%
+}
+.c1{
+  background: no-repeat url("images/Offer1.png");
+  border-radius: 20px;
+  width: 300px;
+}
+.c2{
+  background: no-repeat url("images/Offer2.png");
+  border-radius: 20px;
+  width: 300px;
+}
+.c3{
+  background: no-repeat url("images/Offer3.png");
+  border-radius: 20px;
+  width: 300px;
+}
+.title_card1, .title_card2, .title_card3{
+  padding: 5px;
+  display: flex;
+  align-self: center ;
+  font: 30px 'Boldhead',sans-serifs;
+  color: #c7ccd6;
+}
+.desc_card1,.desc_card2, .desc_card3{
+  font: 25px 'Expletus Sans';
+  text-align: center;
+  font-size: 25px;
+  color: #c7ccd6;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.cost_offer1, .cost_offer2, .cost_offer3{
+  display: flex;
+  align-self: center;
 }
 .cost_offer1 a, .cost_offer2 a, .cost_offer3 a{
   text-decoration: none;
 }
-.title_card1{
-  position: absolute;
-  left: 11%;
-  top: 15px;
-  font: 30px 'Boldhead',sans-serifs;
-  color: #c7ccd6;
-
-}
-.cost_offer1{
-  position: absolute;
-  bottom: 50px;
-  left: 10.5%;
-}
-.desc_card1{
-  font: 25px 'Expletus Sans';
-  position: absolute;
+.desc_card1 .tooltiptext, .desc_card2 .tooltiptext, .desc_card3 .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(0, 0, 0);
   text-align: center;
-  top: 43%;
-  left: 17%;
-  font-size: 25px;
-  transform: translate(-50%, -50%);
-  color: #c7ccd6;
-}
-.desc_card1:hover{
-  
-}
-.title_card2{
+  border-radius: 6px;
+  padding: 5px 0;
   position: absolute;
-  left: 45%;
-  top: 15px;
-  font: 30px 'Boldhead',sans-serifs;
-  color: #c7ccd6;
-
-}
-.cost_offer2{
-  position: absolute;
-  bottom: 50px;
-  left: 43.5%;
-}
-.desc_card2{
-  font: 25px 'Expletus Sans';
-  position: absolute;
-  text-align: center;
-  top: 43%;
+  z-index: 1;
+  bottom: 125%;
   left: 50%;
-  font-size: 25px;
-  transform: translate(-50%, -50%);
-  color: #c7ccd6;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
-.title_card3{
+.desc_card1 .tooltiptext::after, .desc_card2 .tooltiptext::after, .desc_card3 .tooltiptext::after{
+  content: "";
   position: absolute;
-  right: 10%;
-  top: 15px;
-  font: 30px 'Boldhead',sans-serifs;
-  color: #c7ccd6;
-
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
-.cost_offer3{
-  position: absolute;
-  bottom: 50px;
-  right: 10%;
+.desc_card1:hover .tooltiptext, .desc_card2:hover .tooltiptext, .desc_card3:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
-.desc_card3{
-  font: 25px 'Expletus Sans';
-  position: absolute;
-  text-align: center;
-  top: 43%;
-  right: 2%;
-  font-size: 25px;
-  transform: translate(-50%, -50%);
-  color: #c7ccd6;
-}
-.card{
-  margin-top: 10px;
-  height: 450px;
-}
-
-/* Tooltip text */
-.desc_card3 .tooltiptext, .desc_card2 .tooltiptext, .desc_card1 .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    font-size: 15px;
-
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-/* Tooltip arrow */
-.desc_card3 .tooltiptext::after, .desc_card2 .tooltiptext:after, .desc_card1 .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.desc_card3:hover .tooltiptext, .desc_card2:hover .tooltiptext, .desc_card1:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
